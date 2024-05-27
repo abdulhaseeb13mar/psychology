@@ -1,0 +1,27 @@
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes lessfloatAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating {
+  animation: floatAnimation 3s ease-in-out infinite;
+}
+
+.less-floating {
+  animation: lessfloatAnimation 3s ease-in-out infinite;
+}
