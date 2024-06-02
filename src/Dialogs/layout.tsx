@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
-import peach from "../assets/peach.png";
 import { Typography } from "@mui/material";
 import useResponsiveFontSize from "../hooks/useResponsiveFontSize";
 import "../float.css";
+import WestIcon from "@mui/icons-material/West";
 
 const DialogLayout = ({
   handleClose,
@@ -34,11 +34,13 @@ const DialogLayout = ({
           height: 80,
         }}
       >
-        <img
-          src={peach}
-          alt="peach"
-          style={{ width: "10vw", cursor: "pointer", maxWidth: "60px" }}
+        <WestIcon
           onClick={handleClose}
+          sx={{
+            color: "#ededed",
+            fontSize: 50,
+            cursor: "pointer",
+          }}
         />
       </div>
       <div
@@ -56,7 +58,8 @@ const DialogLayout = ({
             align="center"
             // fontWeight={"bold"}
             fontSize={headingSize}
-            fontFamily={'"Luckiest Guy", cursive'}
+            fontFamily={"Source Sans 3"}
+            color={"#ededed"}
           >
             {heading}
           </Typography>

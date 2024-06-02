@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import tushySong3 from "../assets/tushy-song3.mp3";
-import peach from "../assets/peach.png";
+import brain from "../assets/Brain.png";
 import "../shake.css";
 
 function ImageAudioPlayer() {
@@ -58,12 +58,17 @@ function ImageAudioPlayer() {
   return (
     <div className="c-c-c">
       <img
-        src={peach}
+        src={brain}
         alt="Descriptive alt text"
         onClick={handleImageClick}
-        ref={shakeRef}
+        // ref={shakeRef}
         className={isPlaying ? "bouncing" : undefined}
-        style={{ cursor: "pointer", width: "100%" }}
+        style={{
+          cursor: "pointer",
+          width: "80%",
+          marginTop: 20,
+          marginBottom: 20,
+        }}
       />{" "}
       <audio
         ref={audioRef}

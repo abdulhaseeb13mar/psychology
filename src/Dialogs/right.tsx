@@ -2,7 +2,6 @@ import { Dialog, Slide } from "@mui/material";
 import { TransitionProps } from "@mui/material/transitions";
 import { ReactElement, Ref, forwardRef } from "react";
 import DialogLayout from "./layout";
-import RoadmapTimeline from "../components/roadmapTimeline";
 
 const Transition = forwardRef(function Transition(
   props: TransitionProps & {
@@ -32,10 +31,10 @@ const RightDialog = ({
       open={open}
       onClose={handleClose}
       TransitionComponent={Transition}
-      PaperProps={{ sx: { bgcolor: "#ffc0a4" } }}
+      PaperProps={{ sx: { bgcolor: "#151111" } }}
     >
-      <DialogLayout heading="ROADMAP" handleClose={handleClose}>
-        <RoadmapTimeline />
+      <DialogLayout heading="Parenting" handleClose={handleClose}>
+        asdasd
       </DialogLayout>
     </Dialog>
   );

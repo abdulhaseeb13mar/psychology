@@ -9,7 +9,6 @@ import LeftDialog from "./Dialogs/left";
 import RightDialog from "./Dialogs/right";
 import UpDialog from "./Dialogs/up";
 import ImageAudioPlayer from "./components/audioplayer";
-import MemeCoinsLayers from "./components/memeCoinsLayers";
 import Socials from "./components/socials";
 import "./shake.css";
 
@@ -57,21 +56,11 @@ function App() {
   return (
     <>
       <div className="app">
-        <div className="tagline " style={{ flexWrap: "wrap" }}>
-          <span ref={shakeRef} className="shake">
-            Shake&nbsp;
-          </span>
-          <span style={{ textAlign: "center" }}>
-            {" "}
-            your assets with Satushy!
-          </span>
-        </div>
         <div
           className="r-c-sb"
           style={{
             width: "85vw",
             maxWidth: "600px",
-            marginTop: "3rem",
           }}
         >
           <div className="c-c-c">
@@ -87,11 +76,11 @@ function App() {
                 className="peach-handles"
                 sx={{
                   fontSize: isSm ? 15 : 20,
-                  fontFamily: '"Luckiest Guy", cursive',
-                  letterSpacing: 2,
+                  fontFamily: "Source Sans 3",
+                  textAlign: "center",
                 }}
               >
-                ABOUT
+                Adults
               </Typography>
             </div>
           </div>
@@ -99,9 +88,7 @@ function App() {
             <div
               className="c-c-c move-up-onhover"
               style={{ marginBottom: 10 }}
-              onClick={() =>
-                window.open("https://luminex.io/runes/mint", "_blank")
-              }
+              onClick={() => handleArrowClick("top", true)}
             >
               <ArrowBackIosIcon
                 sx={{ transform: "rotate(90deg)" }}
@@ -111,11 +98,10 @@ function App() {
                 className="peach-handles lucky"
                 sx={{
                   fontSize: isSm ? 15 : 20,
-                  fontFamily: '"Luckiest Guy", cursive',
-                  letterSpacing: 2,
+                  fontFamily: "Source Sans 3",
                 }}
               >
-                MINT
+                Students
               </Typography>
             </div>
             <ImageAudioPlayer />
@@ -128,11 +114,10 @@ function App() {
                 className="peach-handles"
                 sx={{
                   fontSize: isSm ? 15 : 20,
-                  fontFamily: '"Luckiest Guy", cursive',
-                  letterSpacing: 2,
+                  fontFamily: "Source Sans 3",
                 }}
               >
-                TOKENOMICS
+                Professionals
               </Typography>
               <ArrowBackIosIcon
                 sx={{ transform: "rotate(270deg)" }}
@@ -148,11 +133,11 @@ function App() {
               className="peach-handles"
               sx={{
                 fontSize: isSm ? 15 : 20,
-                fontFamily: '"Luckiest Guy", cursive',
-                letterSpacing: 2,
+                fontFamily: "Source Sans 3",
+                textAlign: "center",
               }}
             >
-              ROADMAP
+              Parents
             </Typography>
             <ArrowForwardIosIcon
               fontSize={isSm ? "small" : "medium"}
@@ -166,7 +151,7 @@ function App() {
         <UpDialog open={UpDialogOpen} setOpen={handleArrowClick} />
       </div>
       <Socials />
-      <MemeCoinsLayers />
+      {/* <MemeCoinsLayers /> */}
     </>
   );
 }

@@ -31,13 +31,11 @@ const UpDialog = ({
       open={open}
       onClose={handleClose}
       TransitionComponent={Transition}
-      PaperProps={{ sx: { bgcolor: "#ffc0a4" } }}
+      PaperProps={{ sx: { bgcolor: "#151111" } }}
     >
-      <DialogLayout
-        heading="CrowdSale"
-        handleClose={handleClose}
-        children="Join our crowdsale beginning April 21, 2024. We aim to raise $100,000 in an open sale. Owning $SHY tokens means you're part of every new launch on Satushy, with 5% of your tokens accessible immediately at the TGE and the remainder vested over 18 months."
-      />
+      <DialogLayout heading="Student Life" handleClose={handleClose}>
+        asdasdasd
+      </DialogLayout>
     </Dialog>
   );
 };
