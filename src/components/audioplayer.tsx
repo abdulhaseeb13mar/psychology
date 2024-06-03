@@ -60,9 +60,9 @@ function ImageAudioPlayer() {
       <img
         src={brain}
         alt="Descriptive alt text"
-        onClick={handleImageClick}
+        // onClick={handleImageClick}
         // ref={shakeRef}
-        className={isPlaying ? "bouncing" : undefined}
+        // className={isPlaying ? "bouncing" : undefined}
         style={{
           cursor: "pointer",
           width: "80%",

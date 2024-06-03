@@ -4,10 +4,10 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { Typography, useMediaQuery } from "@mui/material";
 
-import DownDialog from "./Dialogs/down";
-import LeftDialog from "./Dialogs/left";
-import RightDialog from "./Dialogs/right";
-import UpDialog from "./Dialogs/up";
+import DownDialog from "./Dialogs/Professionals/down";
+import LeftDialog from "./Dialogs/Adults/left";
+import RightDialog from "./Dialogs/Parents/right";
+import UpDialog from "./Dialogs/Students/up";
 import ImageAudioPlayer from "./components/audioplayer";
 import Socials from "./components/socials";
 import "./shake.css";
