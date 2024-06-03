@@ -3,13 +3,13 @@ import { TransitionProps } from "@mui/material/transitions";
 import { ReactElement, Ref, forwardRef } from "react";
 import DialogLayout from "./layout";
 import useResponsiveFontSize from "../hooks/useResponsiveFontSize";
-import relation from "../assets/images/relationship.jpg";
-import reselience from "../assets/images/reselience.jpg";
+import balance from "../assets/images/balance.png";
+import time from "../assets/images/time.png";
 import ImageCard from "../components/imageCard";
 
 const professionalCategories = [
-  { name: "Academic Stress", image: relation },
-  { name: "Sleep Aid", image: reselience },
+  { name: "Time Management", image: time },
+  { name: "Work Life Balance", image: balance },
 ];
 
 const Transition = forwardRef(function Transition(

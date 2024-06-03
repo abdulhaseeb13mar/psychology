@@ -2,13 +2,13 @@ import { Dialog, Slide } from "@mui/material";
 import { TransitionProps } from "@mui/material/transitions";
 import { ReactElement, Ref, forwardRef } from "react";
 import DialogLayout from "./layout";
-import relation from "../assets/images/relationship.jpg";
-import reselience from "../assets/images/reselience.jpg";
+import sleepaid from "../assets/images/sleepaid.png";
+import academicStress from "../assets/images/academicStress.jpg";
 import ImageCard from "../components/imageCard";
 
 const studentCategories = [
-  { name: "Academic Stress", image: relation },
-  { name: "Sleep Aid", image: reselience },
+  { name: "Academic Stress", image: academicStress },
+  { name: "Sleep Aid", image: sleepaid },
 ];
 
 const Transition = forwardRef(function Transition(

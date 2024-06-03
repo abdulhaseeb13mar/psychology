@@ -3,12 +3,12 @@ import { TransitionProps } from "@mui/material/transitions";
 import { ReactElement, Ref, forwardRef } from "react";
 import DialogLayout from "./layout";
 import ImageCard from "../components/imageCard";
-import relation from "../assets/images/relationship.jpg";
-import reselience from "../assets/images/reselience.jpg";
+import infant from "../assets/images/infant.png";
+import childhood from "../assets/images/childhood.png";
 
 const parentingCategories = [
-  { name: "Infant", image: relation },
-  { name: "Early Childhood", image: reselience },
+  { name: "Infant", image: infant },
+  { name: "Early Childhood", image: childhood },
 ];
 
 const Transition = forwardRef(function Transition(
