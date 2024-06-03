@@ -1,5 +1,4 @@
-import xIcon from "../assets/x.svg";
-import teleIcon from "../assets/telegram.svg";
+import whatsapp from "../assets/images/whatsapp.png";
 
 const Socials = () => {
   return (
@@ -12,14 +11,14 @@ const Socials = () => {
       }}
     >
       <a
-        href={"https://x.com/satushybase"}
+        href={"https://wa.me/923343606193"}
         target="blank"
         className="cursor-pointer"
       >
         <img
-          src={xIcon}
+          src={whatsapp}
           className="peach-on-hover"
-          alt="xIcon"
+          alt="whatsapp"
           style={{
             width: "8vw",
             maxWidth: "2.5rem",
@@ -27,7 +26,7 @@ const Socials = () => {
           }}
         />
       </a>
-      <a
+      {/* <a
         href={"https://t.me/satushyrunes"}
         target="blank"
         className="cursor-pointer"
@@ -43,7 +42,7 @@ const Socials = () => {
             cursor: "pointer",
           }}
         />
-      </a>
+      </a> */}
     </div>
   );
 };
