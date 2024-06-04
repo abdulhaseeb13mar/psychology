@@ -27,7 +27,7 @@ const DialogLayout = ({
       }}
     >
       <div
-        className="r-c-sb"
+        className="r-c-fe"
         style={{
           width: "100%",
           justifySelf: "flex-start",
@@ -56,10 +56,10 @@ const DialogLayout = ({
           <Typography
             className="less-floating"
             align="center"
-            // fontWeight={"bold"}
             fontSize={headingSize}
-            fontFamily={"Source Sans 3"}
+            fontFamily={"Noto Nastaliq Urdu"}
             color={"#ededed"}
+            marginBottom={10}
           >
             {heading}
           </Typography>

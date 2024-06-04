@@ -29,7 +29,7 @@ const useResponsiveFontSize = (
     return () => window.removeEventListener("resize", calculateFontSize);
   }, []);
 
-  return [`${paraSize}px`, `${headingSize}px`];
+  return [paraSize, headingSize];
 };
 
 export default useResponsiveFontSize;

@@ -40,7 +40,7 @@ const LeftDialog = ({
       PaperProps={{ sx: { bgcolor: "#151111" } }}
     >
       {currentTopic === 0 ? (
-        <DialogLayout heading="Adult Life" handleClose={handleClose}>
+        <DialogLayout heading="18+" handleClose={handleClose}>
           {adultCategories.map((category) => (
             <ImageCard
               heading={category.name}

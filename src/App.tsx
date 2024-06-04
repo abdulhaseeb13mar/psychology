@@ -11,6 +11,7 @@ import UpDialog from "./Dialogs/Students/up";
 import ImageAudioPlayer from "./components/audioplayer";
 import Socials from "./components/socials";
 import "./shake.css";
+import useResponsiveFontSize from "./hooks/useResponsiveFontSize";
 
 function App() {
   const [DownDialogOpen, setDownDialogOpen] = useState(false);
@@ -18,6 +19,7 @@ function App() {
   const [RightDialogOpen, setRightDialogOpen] = useState(false);
   const [UpDialogOpen, setUpDialogOpen] = useState(false);
   const shakeRef = useRef<HTMLSpanElement>(null);
+  const [_, headingSize] = useResponsiveFontSize(30, 65);
 
   const isSm = useMediaQuery("(max-width:600px)");
 
@@ -55,12 +57,24 @@ function App() {
   };
   return (
     <>
+      <div className="c-c-c" style={{ width: "100%", height: 150 }}>
+        <Typography
+          className="less-floating"
+          align="center"
+          fontSize={headingSize - 10}
+          fontFamily={"Noto Nastaliq Urdu"}
+          color={"#ededed"}
+        >
+          {`پرسکون زندگی`}
+        </Typography>
+      </div>
       <div className="app">
         <div
           className="r-c-sb"
           style={{
             width: "85vw",
             maxWidth: "600px",
+            marginTop: "-10vh",
           }}
         >
           <div className="c-c-c">
@@ -68,10 +82,11 @@ function App() {
               className="r-c-c move-left-onhover"
               onClick={() => handleArrowClick("left", true)}
             >
-              <ArrowBackIosIcon
+              <ArrowForwardIosIcon
                 fontSize={isSm ? "small" : "medium"}
-                style={{ marginTop: -5 }}
+                // style={{ marginTop: -5 }}
               />
+
               <Typography
                 className="peach-handles"
                 sx={{
@@ -80,7 +95,7 @@ function App() {
                   textAlign: "center",
                 }}
               >
-                Adults
+                18+
               </Typography>
             </div>
           </div>
@@ -98,10 +113,10 @@ function App() {
                 className="peach-handles lucky"
                 sx={{
                   fontSize: isSm ? 15 : 20,
-                  fontFamily: "Source Sans 3",
+                  fontFamily: "Noto Nastaliq Urdu",
                 }}
               >
-                Students
+                طالب علم
               </Typography>
             </div>
             <ImageAudioPlayer />
@@ -114,10 +129,10 @@ function App() {
                 className="peach-handles"
                 sx={{
                   fontSize: isSm ? 15 : 20,
-                  fontFamily: "Source Sans 3",
+                  fontFamily: "Noto Nastaliq Urdu",
                 }}
               >
-                Professionals
+                پیشہ ور افراد
               </Typography>
               <ArrowBackIosIcon
                 sx={{ transform: "rotate(270deg)" }}
@@ -126,22 +141,22 @@ function App() {
             </div>
           </div>
           <div
-            className="r-c-c move-right-onhover"
+            className="r-fe-c move-right-onhover"
             onClick={() => handleArrowClick("right", true)}
           >
             <Typography
               className="peach-handles"
               sx={{
                 fontSize: isSm ? 15 : 20,
-                fontFamily: "Source Sans 3",
+                fontFamily: "Noto Nastaliq Urdu",
                 textAlign: "center",
               }}
             >
-              Parents
+              والدین
             </Typography>
-            <ArrowForwardIosIcon
+            <ArrowBackIosIcon
               fontSize={isSm ? "small" : "medium"}
-              style={{ marginTop: -5 }}
+              sx={{ marginBottom: -1 }}
             />
           </div>
         </div>

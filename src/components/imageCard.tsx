@@ -41,10 +41,11 @@ const ImageCard = ({
       <Typography
         sx={{
           zIndex: 30,
-          marginLeft: "4%",
-          marginBottom: "2%",
+          marginRight: "4%",
+          marginBottom: "5%",
           fontWeight: "bold",
           fontSize: "1.4rem",
+          fontFamily: "Noto Nastaliq Urdu",
         }}
       >
         {heading}

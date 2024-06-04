@@ -42,7 +42,7 @@ const DownDialog = ({
       PaperProps={{ sx: { bgcolor: "#151111" } }}
     >
       {currentTopic === 0 ? (
-        <DialogLayout heading="Professional Life" handleClose={handleClose}>
+        <DialogLayout heading="پیشہ ور افراد" handleClose={handleClose}>
           {professionalCategories.map((category) => (
             <ImageCard
               heading={category.name}

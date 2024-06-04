@@ -40,7 +40,7 @@ const UpDialog = ({
       PaperProps={{ sx: { bgcolor: "#151111" } }}
     >
       {currentTopic === 0 ? (
-        <DialogLayout heading="Student Life" handleClose={handleClose}>
+        <DialogLayout heading="طالب علم" handleClose={handleClose}>
           {studentCategories.map((category) => (
             <ImageCard
               heading={category.name}

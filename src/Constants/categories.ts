@@ -8,21 +8,21 @@ import academicStress from "../assets/images/academicStress.jpg";
 import sleepaid from "../assets/images/sleepaid.png";
 
 export const adultCategories = [
-  { id: 1, name: "Relationship Issue", image: relation },
+  { id: 1, name: "رومانوی تعلوقات", image: relation },
   { id: 2, name: "Resilience", image: reselience },
 ];
 
 export const parentingCategories = [
-  { id: 1, name: "Infant", image: infant },
+  { id: 1, name: "نومولود کی پرورش", image: infant },
   { id: 2, name: "Early Childhood", image: childhood },
 ];
 
 export const professionalCategories = [
-  { name: "Time Management", image: time, id: 1 },
-  { name: "Work Life Balance", image: balance, id: 2 },
+  { name: "پابندی وقت", image: time, id: 1 },
+  { name: "کام اور زندگی کا توازن", image: balance, id: 2 },
 ];
 
 export const studentCategories = [
-  { id: 1, name: "Academic Stress", image: academicStress },
+  { id: 1, name: "تعلیمی تناؤ", image: academicStress },
   { id: 2, name: "Sleep Aid", image: sleepaid },
 ];

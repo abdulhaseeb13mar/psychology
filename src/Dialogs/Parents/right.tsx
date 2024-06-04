@@ -40,7 +40,7 @@ const RightDialog = ({
       PaperProps={{ sx: { bgcolor: "#151111" } }}
     >
       {currentTopic === 0 ? (
-        <DialogLayout heading="Parenting" handleClose={handleClose}>
+        <DialogLayout heading="والدین" handleClose={handleClose}>
           {parentingCategories.map((category) => (
             <ImageCard
               heading={category.name}
