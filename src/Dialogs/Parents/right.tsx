@@ -5,6 +5,7 @@ import DialogLayout from "../layout";
 import ImageCard from "../../components/imageCard";
 import Topic1 from "./topics/1";
 import Topic2 from "./topics/2";
+import Topic3 from "./topics/3";
 import { parentingCategories } from "../../Constants/categories";
 
 const Transition = forwardRef(function Transition(
@@ -53,6 +54,8 @@ const RightDialog = ({
         <Topic1 goback={goback} />
       ) : currentTopic === 2 ? (
         <Topic2 goback={goback} />
+      ) : currentTopic === 3 ? (
+        <Topic3 goback={goback} />
       ) : (
         <></>
       )}

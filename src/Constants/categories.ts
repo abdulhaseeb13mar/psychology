@@ -6,6 +6,7 @@ import balance from "../assets/images/balance.png";
 import time from "../assets/images/time.png";
 import academicStress from "../assets/images/academicStress.jpg";
 import sleepaid from "../assets/images/sleepaid.png";
+import earlychildhood from "../assets/images/eaarly2.jpg";
 
 export const adultCategories = [
   { id: 1, name: "رومانوی تعلوقات", image: relation },
@@ -14,7 +15,8 @@ export const adultCategories = [
 
 export const parentingCategories = [
   { id: 1, name: "نومولود کی پرورش", image: infant },
-  { id: 2, name: "Early Childhood", image: childhood },
+  { id: 2, name: "ابتدائی بچپن", image: earlychildhood },
+  { id: 3, name: "ابتدائی بچپن", image: earlychildhood },
 ];
 
 export const professionalCategories = [
